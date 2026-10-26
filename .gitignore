@@ -1,0 +1,23 @@
+# 密钥与凭据 —— 这些永远不进仓库
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 别把临时草稿也提交上来
+scratch/
+*.tmp

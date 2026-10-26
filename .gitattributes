@@ -1,0 +1,4 @@
+# Windows 和 macOS/Linux 混用时不产生整文件的行尾差异
+* text=auto
+*.ps1 text eol=crlf
+*.sh  text eol=lf
