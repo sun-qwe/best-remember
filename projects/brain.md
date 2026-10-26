@@ -2,7 +2,7 @@
 
 - 一句话：一个 git 仓库做跨工具、跨电脑的个人档案，所有 AI 智能体从同一份读背景
 - 状态：骨架已建成并填入真实内容，待推送 GitHub　最后更新：2026-02-13
-- 位置：`D:\桌面2\大脑`（目标：GitHub private repo）
+- 位置：`D:\桌面2\best-remember`（GitHub: sun-qwe/best-remember，已推送）
 
 ## 目标
 

@@ -12,3 +12,11 @@
 - 做了：给写入协议加了快慢双通道；新增 scripts/distill-prompt.md（每周蒸馏提示词）
 - 定了：想法变化走 journal 立刻生效，me/ 只在每周确认后才改；冲突必须报告不许静默合并
 - 下次：跑 link.ps1 验证跨工具；推 GitHub
+## 2026-10-26 SUN（事故）
+- 做了：11:34 前后发现 .git 目录消失，3 个提交历史丢失；文件内容完整，已重建仓库并重新提交
+- 定了：桌面上放 git 仓库必须配 remote，否则等于没有版本控制；先推 GitHub 再考虑搬目录
+- 下次：确认 .git 消失的原因（用户操作？清理工具？），并在 GitHub 上建 private repo
+## 2026-10-26 迁移
+- 做了：仓库从 D:\桌面2\大脑 迁到 D:\桌面2\best-remember（远端 sun-qwe/best-remember）；同步了事故记录
+- 定了：best-remember 是唯一副本，路径不含中文；大脑目录改名保留一周后删除
+- 下次：在 best-remember 里开 DSH 新会话验证；跑 link.ps1 让指针指向新路径
