@@ -20,3 +20,7 @@
 - 做了：仓库从 D:\桌面2\大脑 迁到 D:\桌面2\best-remember（远端 sun-qwe/best-remember）；同步了事故记录
 - 定了：best-remember 是唯一副本，路径不含中文；大脑目录改名保留一周后删除
 - 下次：在 best-remember 里开 DSH 新会话验证；跑 link.ps1 让指针指向新路径
+## 2026-10-26 再次迁移
+- 做了：仓库迁到 D:\yupi-ke\git-branch\best-remember；更新 environment/brain 文档路径；重跑 link.ps1 修死链
+- 定了：仓库不再放桌面；每次搬目录后必须重跑 link.ps1，否则工具静默失效
+- 下次：在新目录开 DSH 验证；别再把工作区和仓库放同一个会被删的目录

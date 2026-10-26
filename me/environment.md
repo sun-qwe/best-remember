@@ -36,8 +36,8 @@
 
 ## 机器约定
 
-- 仓库位置：本机 `D:\桌面2\best-remember`；**其它机器统一放 `~/brain`**
-- 路径含中文，个别 CLI 会出问题，必要时加引号
+- 仓库位置：本机 `D:\yupi-ke\git-branch\best-remember`；**其它机器统一放 `~/brain`**
+- 路径已不含中文（旧址 `D:\桌面2\大脑` 含中文，个别 CLI 会出问题）；换目录后必须重跑 `link.ps1`
 - 没有 `gh` CLI → GitHub 操作用 `git` 命令或网页
 - 未开开发者模式 → 建符号链接要管理员，所以入口用「写文件」不用软链
 
@@ -45,13 +45,17 @@
 
 - **`.ps1` 必须存成 UTF-8 带 BOM**：5.1 遇到无 BOM 的 UTF-8 会按 GBK 解码，中文直接语法报错
   （`The string is missing the terminator`）。只影响 `.ps1`，`.md` / `.sh` 用无 BOM。
-- `D:\桌面2\大脑` 曾缺 `WRITE_OWNER` 权限，导致所有命令报
+- **旧址** `D:\桌面2\大脑` 曾缺 `WRITE_OWNER` 权限，导致所有命令报
   `SetNamedSecurityInfoW failed (Win32 5)`。修复记录在 `D:\桌面2\acl-recovery\`。
   以后遇到同样报错，先查文件权限，不是代码问题。
+- **仓库别放桌面**：`.git` 曾在 `D:\桌面2\大脑` 里整个目录消失（2026-10-26），历史丢失，内容靠重建补回。
+  现已迁到 `D:\yupi-ke\git-branch\best-remember`。
+- **移动或改名仓库后必须重跑 `link.ps1`**：工具入口里写的是绝对路径，旧目录一删就是死链。
+  它不报错，只是静默失效，表现是「AI 又变笨了」。
 - git 在 Windows 上对 LF/CRLF 有警告，本仓库用 `.gitattributes` 统一，忽略那些 warning 即可。
 
 ## 账号与凭据（只写"在哪"，不写值）
 
-- GitHub：<你的用户名>，SSH key 在 `~/.ssh/`（是否已配待确认）
+- GitHub：`sun-qwe`；SSH key `~/.ssh/id_ed25519` 已配，推送成功过
 - git 全局提交身份已配置（`user.name = sun`）
 - **密钥一律不进本仓库**，`.gitignore` 已挡 `.env` / `*.key` / `secrets/`
